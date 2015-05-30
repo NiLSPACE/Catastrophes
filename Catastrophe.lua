@@ -87,6 +87,16 @@ end
 
 
 
+-- Clamps the speed of the catastrophe. It only clamps the X and Z coordinates
+function cCatastrophe:ClampSpeed(a_Min, a_Max)
+	self.m_Speed.x = Clamp(self.m_Speed.x, a_Min, a_Max)
+	self.m_Speed.z = Clamp(self.m_Speed.z, a_Min, a_Max)
+end
+
+
+
+
+
 -- Sets the current position of the catastrophe.
 function cCatastrophe:SetPosition(a_PosX, a_PosZ)
 	self.m_Position.x = a_PosX
