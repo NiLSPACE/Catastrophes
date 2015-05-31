@@ -14,6 +14,8 @@ local g_SrcBlocks =
 {
 	[E_BLOCK_LEAVES]         = {BlockType = E_BLOCK_AIR,            BlockMeta = 0,  SetFunc = cWorld.FastSetBlock},
 	[E_BLOCK_NEW_LEAVES]     = {BlockType = E_BLOCK_AIR,            BlockMeta = 0,  SetFunc = cWorld.FastSetBlock},
+	[E_BLOCK_LOG]            = {BlockType = E_BLOCK_LOG,            BlockMeta = 0,  SetFunc = function() end},
+	[E_BLOCK_NEW_LOG]        = {BlockType = E_BLOCK_LOG,            BlockMeta = 0,  SetFunc = function() end},
 	[E_BLOCK_CLAY]           = {BlockType = E_BLOCK_HARDENED_CLAY,  BlockMeta = 0,  SetFunc = cWorld.FastSetBlock},
 	[E_BLOCK_SAND]           = {BlockType = E_BLOCK_SANDSTONE,      BlockMeta = 0,  SetFunc = cWorld.FastSetBlock},
 	[E_BLOCK_WOOL]           = {BlockType = E_BLOCK_WOOL,           BlockMeta = 0,  SetFunc = cWorld.FastSetBlock}, -- Wool loses it's color when exposed to too much UV radiation.
