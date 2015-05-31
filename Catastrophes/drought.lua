@@ -83,6 +83,12 @@ function cDrought:ApplyDrought(a_World)
 		
 		local Succes, Height = a_World:TryGetHeight(X, Z)
 		if (Succes) then
+			-- 10% chance that there will be particle effects
+			if (random(10) == 1) then
+				-- a_World:BroadcastSoundParticleEffect(2001, X, Height, Z, BlockType)
+				a_World:BroadcastParticleEffect("smoke", X, Height + 0.5, Z, random(), random(), random(), 0.125, 25)
+			end
+			
 			local BlockType = a_World:GetBlock(X, Height, Z)
 			local BlockInf = g_SrcBlocks[BlockType]
 			if (BlockInf) then
