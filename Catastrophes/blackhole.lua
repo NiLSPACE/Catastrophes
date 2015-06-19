@@ -30,7 +30,7 @@ function cBlackHole:new()
 	
 	Obj.m_ActiveTime = random(2000, 3000)
 	
-	Obj.m_Size = random(30, 50)
+	Obj.m_Size = random(30, 40)
 	
 	-- Will be initialized on import world
 	Obj.m_ActiveArea = nil
