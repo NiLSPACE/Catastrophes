@@ -73,6 +73,11 @@ function CatastropheSpawner(a_World)
 		end
 	)
 	
+	if (NumPlayers == 0) then
+		-- No players to spawn a catastrophe around.
+		return
+	end
+	
 	local PlayerChoosen = math.random(NumPlayers)
 	local CurrentPlayer = 1
 	a_World:ForEachPlayer(
