@@ -292,4 +292,12 @@ end
 
 
 
+function cVolcano:__tostring()
+	return "volcano"
+end
+
+
+
+
+
 return cVolcano

@@ -150,4 +150,12 @@ end
 
 
 
+function cDrought:__tostring()
+	return "drought"
+end
+
+
+
+
+
 return cDrought

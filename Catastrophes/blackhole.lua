@@ -132,4 +132,12 @@ end
 
 
 
+function cBlackHole:__tostring()
+	return "black hole"
+end
+
+
+
+
+
 return cBlackHole

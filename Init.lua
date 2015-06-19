@@ -12,6 +12,12 @@ function Initialize(a_Plugin)
 	-- Load all the known catastrophes into g_Catastrophes.
 	LoadCatastrophes()
 	
+	-- Load the configuration
+	InitializeConfiguration(a_Plugin:GetLocalFolder() .. "/config.cfg")
+	
+	-- Initializes the natural catastrophe spawner
+	InitializeSpawner()
+	
 	-- Load the InfoReg library file for registering the Info.lua command table:
 	dofile(cPluginManager:GetPluginsPath() .. "/InfoReg.lua")
 	
