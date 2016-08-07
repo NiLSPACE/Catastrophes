@@ -12,9 +12,6 @@ function LoadCatastrophes()
 	local CurrentPath = cPluginManager:GetCurrentPlugin():GetLocalFolder() .. "/Catastrophes"
 	local Catastrophes = cFile:GetFolderContents(CurrentPath)
 	
-	-- First 2 values are "." and "..". We don't need that.
-	table.remove(Catastrophes, 1); table.remove(Catastrophes, 1)
-	
 	for Idx, Catastrophe in ipairs(Catastrophes) do
 		local Name = Catastrophe:sub(1, -5)
 		local F, Err = loadfile(CurrentPath .. "/" .. Catastrophe)
